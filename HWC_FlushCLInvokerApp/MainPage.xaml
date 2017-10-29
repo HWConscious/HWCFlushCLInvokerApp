@@ -1,0 +1,25 @@
+﻿<Page
+    x:Class="HWC_FlushCLInvokerApp.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:HWC_FlushCLInvokerApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" Loaded="Page_Loaded">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.Transitions>
+            <TransitionCollection>
+                <EntranceThemeTransition FromHorizontalOffset="80" FromVerticalOffset="0" />
+            </TransitionCollection>
+        </Grid.Transitions>
+
+        <Grid x:Name="_eventLogGrid" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Visibility="Visible">
+            <TextBlock Margin="30, 10, 30, 0" Text="Event logs" FontWeight="ExtraBlack" FontStretch="SemiExpanded" Foreground="#FF252526" />
+            <ScrollViewer x:Name="_logScrollViewer" Margin="30,40,30,0" HorizontalScrollBarVisibility="Auto" VerticalScrollMode="Auto">
+                <TextBlock x:Name="_logTextBlock" Margin="0,0,20,20" FontWeight="SemiLight" IsTextSelectionEnabled="True" />
+            </ScrollViewer>
+        </Grid>
+
+    </Grid>
+</Page>
