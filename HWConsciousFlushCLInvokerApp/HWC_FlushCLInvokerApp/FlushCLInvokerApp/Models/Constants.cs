@@ -18,8 +18,10 @@
         public const string XApiKeyValue = "kHnzbQx6PX6sLZIIwwP2E58QlLKKUHeAao4fzoX0";
 
         // Miscellaneous constants
-        public const int FlushConcurrentListsPingFrequencyInMs = 5000;          // 5 seconds
-        public const int MainCloudServicesPingFrequencyInMs = 1000 * 60 * 25;   // 25 minutes
+        public const int FlushConcurrentListsMicroservicePingFrequencyInMs = 5000;  // 5 seconds
+        public const int RegularMicroservicesPingFrequencyInMs = 1000 * 60 * 25;    // 25 minutes
+        public const int RegularMicroservicesConsecutiveCallsIntervalInMs = 5000;   // 5 seconds
+        public const int RegularMicroservicesConsecutiveCallNoOfTimes = 2;
     }
 
     #endregion
